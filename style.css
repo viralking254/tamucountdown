@@ -1,0 +1,113 @@
+*  {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+.menubar {
+    width: 80%;
+    margin: 0 auto;
+    
+}
+.logo {
+    float: left;
+    padding: 10px 0;
+    
+}
+header {
+    
+    width: 100; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+nav {
+    float: right;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+nav li {
+    display:inline-block;
+    margin-left: 70px;
+    padding-top: 25px;
+    position: relative
+}
+nav a {
+    color: rgb(54,157,245);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+nav a:hover {
+    color: rgb(232,69,117);
+
+}
+nav a::before {
+    content: '';
+    display:block;
+    height: 5px;
+    width: 100%;
+    background-color: rgb(232,69,117);
+    position: absolute;
+    top: 0;
+    width: 0%;
+    transition: all ease-in-out 250ms;
+}
+nav a:hover::before {
+    width: 100%;
+}
+
+body {
+    background-color: #FFF;
+  margin: 0 auto;
+  background: url(/Users/V/Desktop/Tamu/Website/images/pexels-ron-lach-9654033.jpg);
+    background-size: 1440px 780px;
+    background-position: center;
+    font-weight: 400;
+}
+.countdown-timer-container {
+    width: 20;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 5%;
+    
+}
+.countdown-timer-container div {
+    width: 25%;
+    text-align: center;
+    font-size: 60px;
+    color: rgb(54,157,245);
+    position: relative;
+    display: inline-block;
+} 
+.countdown-timer-values {
+    font-size: 80px !important ;
+}
+
+img {
+    max-width: 250px;
+    max-height: 250px;
+    position:absolute left
+    
+}
+
+h2{
+    
+  box-sizing:inherit;
+  padding: 40px;
+  text-align: center;
+  width: 100%;
+  font-size: 80px;
+  color:rgb(232,69,117);
+  
+}
+
+footer {
+    text-align: center;
+    color: rgb(232,69,117);
+}
